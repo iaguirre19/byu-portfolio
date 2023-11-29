@@ -97,12 +97,8 @@
     align-self: center;
     justify-self: center;
 }
-.hero-blob{
-  width: 38rem;
-  fill: var(--input-color);
-}
 .hero-blob-img{
-  width: 18rem;  
+  width: 28rem;
 }
 /* Counters */
 .counters{
