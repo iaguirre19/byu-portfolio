@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="./assets/styles/home-styles/home-styles.css">
     <link rel="stylesheet" href="./assets/styles/skills-styles/skills.css">
     <link rel="stylesheet" href="./assets/styles/portfolio-page/portfolio-styles.css">
+
 </head>
 <body>
     <div class="home-container grid">
@@ -29,80 +31,85 @@
             </nav>
         </header>
         <main>
-            <section class="portfolio">
+            <section class="portfolio grid">
                 <div class="portfolio-title">
                     <h2>Portfolio</h2>
                     <p>Most Recent work</p>
                 </div>
-                <div class="portfolio-container"> <!--swipe container -->
-                    <div class="portfolio-content">
-                        <div class="portfolio-left-content">
-                            <img src="./img/evitiu.png" alt="evitiu page" width="600px">
+                <div class="portfolio-container swiper mySwiper">
+                    <div class="portfolio-content swiper-wrapper"> <!--swipe container -->
+                        <div class="portfolio-slide swiper-slide">
+                            <div class="portfolio-left-content">
+                                <img src="./assets/img/evitiu.png" alt="evitiu page" >
+                            </div>
+                            <div class="portfolio-right-content">
+                                <div class="portfolio-right-data">
+                                    <h2>Evitiu Landing page</h2>
+                                    <p> Phone Book for California Auto Insurance Company This project involved the development of a comprehensive phone book system for a California-based auto insurance company. I played a pivotal role in creating a CRUD (Create, Read, Update, Delete) system and a user login mechanism. Depending on their roles, users could access and manage company user information. This project demonstrated my ability to design and implement user-friendly systems for efficient data management. </p>
+                                    <div class="btn-data">
+                                        <a href="https://evitiu-demo-2.netlify.app" class="btn-portfolio" target="_blank">
+                                            <span>Demo</span>
+                                            <i class="uil uil-arrow-right"></i>
+                                        </a>
+                                        <a href="https://github.com/iaguirre19/evitiu2.0" class="btn-portfolio" target="_blank">
+                                            <span>Code</span>
+                                            <i class="uil uil-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="portfolio-right-content">
-                            <div class="portfolio-right-data">
-                                <h2>Evitiu Landing page</h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum minus aliquid, ducimus accusamus assumenda dolorum, reiciendis magni fuga quam, distincti</p>
-                                <div class="btn-data">
-                                    <button>
-                                        <span>Demo</span>
-                                        <i class="uil uil-arrow-right"></i>
-                                    </button>
-                                    <button>
-                                        <span>Code</span>
-                                        <i class="uil uil-github"></i>
-                                    </button>
+                        <div class="portfolio-slide swiper-slide">
+                            <div class="portfolio-left-content">
+                                <img src="./assets/img/rsz_agi-phone-book.png" alt="phone book page" >
+                            </div>
+                            <div class="portfolio-right-content">
+                                <div class="portfolio-right-data">
+                                    <h2>Phone Book</h2>
+                                    <p>Human Resources Registration System Another significant project was the implementation of a Human Resources registration system. This project followed a uniform design scheme for consistency. I contributed to the development and maintenance of this system, ensuring a streamlined and efficient HR process. My involvement in this project highlighted my attention to detail and commitment to improving business processes.</p>
+                                    <div class="btn-data">
+                                        <a href="https://courageous-parfait-225b14.netlify.app" class="btn-portfolio" target="_blank">
+                                            <span>Demo</span>
+                                            <i class="uil uil-arrow-right"></i>
+                                        </a>
+                                        <a href="https://github.com/iaguirre19/Phone-book-v.1" class="btn-portfolio" target="_blank">
+                                            <span>Code</span>
+                                            <i class="uil uil-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-slide swiper-slide">
+                            <div class="portfolio-left-content">
+                                <img src="./assets/img/rsz_hr-form.png" alt="agi form page" >
+                            </div>
+                            <div class="portfolio-right-content">
+                                <div class="portfolio-right-data">
+                                    <h2>AGI Form</h2>
+                                    <p>Technology Company Landing Page I had the pleasure of working on a landing page for a technology company based in California. This project allowed me to showcase my web design and development skills. The landing page was designed to create a compelling online presence for the company, emphasizing their services and mission. It was an exciting opportunity to fuse creativity with technology.</p>
+                                    <div class="btn-data">
+                                        <a href="https://rh-formulario-ingreso.netlify.app" class="btn-portfolio" target="_blank">
+                                            <span>Demo</span>
+                                            <i class="uil uil-arrow-right"></i>
+                                        </a>
+                                        <a href="https://github.com/iaguirre19/HR-layout-main" class="btn-portfolio" target="_blank">
+                                            <span>Code</span>
+                                            <i class="uil uil-github"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-left-content">
-                            <img src="./img/rsz_agi-phone-book.png" alt="phone book page" width="600px">
-                        </div>
-                        <div class="portfolio-right-content">
-                            <div class="portfolio-right-data">
-                                <h2>Phone Book</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam earum possimus ullam sapiente, laborum rerum maiores nobis nisi nulla sequi</p>
-                                <div class="btn-data">
-                                    <button>
-                                        <span>Demo</span>
-                                        <i class="uil uil-arrow-right"></i>
-                                    </button>
-                                    <button>
-                                        <span>Code</span>
-                                        <i class="uil uil-github"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-left-content">
-                            <img src="./img/rsz_hr-form.png" alt="agi form page" width="600px">
-                        </div>
-                        <div class="portfolio-right-content">
-                            <div class="portfolio-right-data">
-                                <h2>AGI Form</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quo sit eveniet assumenda vel ab nulla repellendus ex eius ad a libero tenetur ut, temporibus eum illo dolo</p>
-                                <div class="btn-data">
-                                    <button>
-                                        <span>Demo</span>
-                                        <i class="uil uil-arrow-right"></i>
-                                    </button>
-                                    <button>
-                                        <span>Code</span>
-                                        <i class="uil uil-github"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="portfolio-arrows">
+                <!-- <div class="portfolio-arrows">
                     <i class="uil uil-angle-left-b"></i>
                     <i class="uil uil-angle-right-b"></i>
-                </div>
+                </div> -->
             </section>
         </main>
         <footer class="home-footer">
@@ -119,5 +126,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swipePortfolio.js"></script>
 </body>
 </html>
